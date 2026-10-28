@@ -1,0 +1,53 @@
+{
+  "milestones": [
+    {
+      "id": "data-preparation",
+      "critical": true,
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "data_deliverables",
+          "weight": 0.5
+        },
+        {
+          "id": "data_schema",
+          "weight": 0.5
+        }
+      ]
+    },
+    {
+      "id": "model-evaluation",
+      "critical": true,
+      "weight": 0.4,
+      "criteria": [
+        {
+          "id": "model_deliverables",
+          "weight": 0.33
+        },
+        {
+          "id": "metrics_schema",
+          "weight": 0.33
+        },
+        {
+          "id": "metrics_thresholds",
+          "weight": 0.34
+        }
+      ]
+    },
+    {
+      "id": "deliverables-and-report",
+      "critical": false,
+      "weight": 0.3,
+      "criteria": [
+        {
+          "id": "final_deliverables",
+          "weight": 0.5
+        },
+        {
+          "id": "report_content",
+          "weight": 0.5
+        }
+      ]
+    }
+  ]
+}

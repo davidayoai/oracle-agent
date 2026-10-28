@@ -1,0 +1,25 @@
+{
+  "task_id": "otter/tabular-classification-task",
+  "attempts": [
+    {
+      "id": "attempt_1",
+      "architecture": "Gradient Boosting Classifier",
+      "augmentations": "StandardScaler and Imputation",
+      "description": "Baseline tabular model for fairness-aware classification",
+      "metrics": {
+        "auroc": 0.85,
+        "max_platform_fpr_disparity": 0.15
+      }
+    }
+  ],
+  "pass_criteria": {
+    "auroc": {
+      "threshold": 0.80,
+      "comparison": "gte"
+    },
+    "max_platform_fpr_disparity": {
+      "threshold": 0.25,
+      "comparison": "lte"
+    }
+  }
+}
